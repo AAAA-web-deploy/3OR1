@@ -1,0 +1,24 @@
+# $3OR1 QA checklist
+
+- [ ] Serve folder with `python -m http.server 5173`.
+- [ ] Homepage hero banner loads, text is crisp, logo visible, no duplicate headline overlay.
+- [ ] Story stage 1 shows Anatoly + Raj + Solana; stage 2 adds Vitalik + Ethereum; stage 3 shows final mascot.
+- [ ] Fusion Lab has 15 visible expression selectors (five per founder); buttons work via mouse, touch, and keyboard.
+- [ ] Happy/Happy/Happy shows match-happy.webp.
+- [ ] Shocked/Shocked/Shocked shows match-shocked.webp.
+- [ ] Angry/Angry/Angry shows match-angry.webp.
+- [ ] Sad/Sad/Sad shows match-sad.webp.
+- [ ] Smug/Smug/Smug shows match-smug.webp.
+- [ ] Featured mixed combo (Shocked/Smug/Smug) loads mixed-surprised-amused-doubtful.webp.
+- [ ] Four other featured combos map correctly per the `mixed` array in app.js.
+- [ ] Any other combo, e.g. Sad/Angry/Happy, shows a locally composited canvas with exactly the selected faces and a truthful teaser.
+- [ ] Chaos randomize button updates three selectors and the result.
+- [ ] Clicking preset/gallery image scrolls to active corresponding result.
+- [ ] Save button downloads the current result; for client-side Canvas, test when site is served over HTTP.
+- [ ] Before contract is configured, Buy/Get button explains verification and does not send visitors to impostor tokens.
+- [ ] After verified Ethereum address is configured, Buy/Get opens address-scoped Uniswap link.
+- [ ] Mobile 390x844, tablet 768x1024, desktop 1440x900: no horizontal overflow.
+- [ ] Reduced-motion preference disables decorative animations.
+- [ ] No missing images or uncaught errors in browser developer tools.
+- [ ] Measure real LCP with Lighthouse before deploying, and check WebP image sizes.
+- [ ] Prominent disclaimer says unofficial parody / no founder or Netflix endorsement.
